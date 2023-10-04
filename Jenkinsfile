@@ -1,8 +1,8 @@
 pipeline { 
     agent any 
     environment { 
-        AWS_ACCESS_KEY_ID     = credentials('jenkins-IAM-AccessKey-ID') 
-        AWS_SECRET_ACCESS_KEY = credentials('jenkins-secret-Access-key-passwd')
+        AWS_ACCESS_KEY_ID     = credentials('Secret-Access-key-ID') 
+        AWS_SECRET_ACCESS_KEY = credentials('jenkins-Secret-Access-key')
         SBT_OPTS = "${SBT_OPTS} -Dsbt.color=false"
     }
     stages { 
